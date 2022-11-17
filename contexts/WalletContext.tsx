@@ -15,7 +15,7 @@ declare var window: any
 export const WalletContext = createContext<IWalletContext>(defaultWallet)
 
 export const WalletContextProvider: React.FC<Props> = ({ children }) => {
-  const [account, setAccount] = useState(null)
+  const [account, setAccount] = useState<string | null>(null)
 
   useEffect(() => {
     const storage = localStorage.getItem('account')

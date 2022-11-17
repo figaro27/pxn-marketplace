@@ -20,7 +20,6 @@ const SearchInput: React.FC = () => {
     const getData = async () => {
       const { data } = await axios.get(`/api/listings`)
       setFullListings(data)
-      setSearchKey(searchKey)
     }
     getData()
   }, [listings])
