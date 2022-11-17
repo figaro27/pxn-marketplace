@@ -140,6 +140,7 @@ const EditListing: React.FC<AddListingProps> = ({ listing, isOpen, onClose}) => 
         version: 'test'
       },
       message: {
+        id: listing?.id,
         name,
         desc,
         image,
@@ -152,6 +153,7 @@ const EditListing: React.FC<AddListingProps> = ({ listing, isOpen, onClose}) => 
           { name: 'version', type: 'string' },
         ],
         Product: [
+          { name: 'id', type: 'string' },
           { name: 'name', type: 'string' },
           { name: 'desc', type: 'string' },
           { name: 'image', type: 'string' },
