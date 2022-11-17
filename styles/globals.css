@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.modal {
+  @apply shadow absolute border p-4 rounded-lg bg-white;
+  @apply flex flex-col items-center sm:w-96;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.searchInput {
+  @apply absolute;
+  top: 50%;
+  left: 5px;
+  transform: translate(0, -50%);
+}
